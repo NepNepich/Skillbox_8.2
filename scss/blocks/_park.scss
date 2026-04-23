@@ -1,0 +1,171 @@
+.park {
+    & img {
+        width: 100%;
+        height: auto;
+
+        @include vp-767 {
+            margin-top: 15px;
+        }
+    }
+
+    &__wraper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 120px 0;
+        gap: 20px;
+
+        @include vp-767 {
+            align-items: flex-start;
+            margin: 0 0 74px 0;
+        }
+
+        @include vp-374 {
+            flex-direction: column;
+            gap: 41px;
+        }
+    }
+
+    &__content {
+        max-width: 505px;
+
+        @include vp-767 {
+            max-width: 340px;
+        }
+    }
+
+    &__caption {
+        font-family: $ff-tenor;
+        color: $color-fallow;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 44px;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+        margin: 0 0 30px 0;
+
+        @include vp-767 {
+            font-size: 24px;
+            line-height: 30px;
+            margin: 0 0 20px 0;
+        }
+
+        @include vp-374 {
+            font-size: 20px;
+            line-height: 24px;
+            margin: 0 0 15px 0;
+        }
+    }
+
+    &__advantages-list {
+        list-style: disc;
+        padding-left: 20px;
+
+        @include vp-374 {
+            padding-left: 18px;
+        }
+    }
+
+    &__advantages-item {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        padding: 0 0 15px 0;
+
+        &::marker {
+            color: $color-fallow;
+
+            @include vp-374 {
+                font-size: 19px;
+            }
+        }
+
+        @include vp-767 {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0 0 10px 0;
+        }
+    }
+
+    &__advantage {
+        display: flex;
+        gap: 85px;
+        align-items: center;
+
+        @include vp-767 {
+            gap: 28px;
+        }
+
+        & svg {
+            width: calc((100% - 199px) / 2);
+            height: 16px;
+            margin-bottom: 50px;
+
+            @include vp-767 {
+                margin-bottom: 45px;
+            }
+        }
+
+        &-text {
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+            align-items: center;
+
+            @include vp-767 {
+                gap: 20px;
+            }
+        }
+
+        &-value {
+            font-family: $ff-tenor;
+            color: $color-fallow;
+            display: flex;
+            gap: 15px;
+            align-items: flex-end;
+
+            @include vp-767 {
+                align-items: center;
+            }
+        }
+
+        &-number {
+            font-size: 140px;
+            line-height: 100px;
+            letter-spacing: -0.04em;
+            text-transform: uppercase;
+
+            @include vp-767 {
+                font-size: 90px;
+                line-height: 70px;
+            }
+
+            @include vp-374 {
+                font-size: 70px;
+                line-height: 50px;
+            }
+        }
+
+        &-unit {
+            font-size: 34px;
+            line-height: 44px;
+            text-transform: uppercase;
+
+            @include vp-767 {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+
+        &-note {
+            font-size: 18px;
+            line-height: 26px;
+
+            @include vp-767 {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+    }
+}

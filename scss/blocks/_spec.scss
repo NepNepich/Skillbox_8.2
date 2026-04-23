@@ -1,0 +1,63 @@
+.spec {
+    max-width: 192px;
+
+    &__value {
+        font-family: $ff-tenor;
+        font-weight: 400;
+        color: $color-fallow;
+        margin-bottom: 10px;
+
+        @include vp-374 {
+            margin-bottom: unset;
+        }
+    }
+
+    &__number {
+        font-size: 48px;
+        line-height: 48px;
+        margin-right: 10px;
+
+        @include vp-767 {
+            font-size: 40px;
+            line-height: 40px;
+            margin-right: unset;
+        }
+
+        @include vp-374 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+    }
+
+    &__unit {
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 24px;
+
+        @include vp-767 {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    &__note {
+        font-size: 18px;
+        line-height: 26px;
+
+        @include vp-767 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__img {
+        width: 40px;
+        height: 40px;
+
+        @include vp-374 {
+            width: 37px;
+            height: 25px;
+        }
+    }
+}
